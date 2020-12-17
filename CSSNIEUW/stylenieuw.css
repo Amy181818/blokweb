@@ -1,0 +1,269 @@
+body {
+    margin: 0;
+    width: 100vw;
+    font-family: sans-serif;
+}
+
+.home img {
+    position: relative;
+    height: auto;
+    width: 100%;
+}
+
+@media (min-width:1025px) {
+    .home img {
+height: 550px;
+background-position: center center;
+
+    }
+}
+
+@media (max-width:400px) {
+    .home img {
+height: 70%;
+    }
+}
+
+#slider {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+}
+
+@media (max-width: 400px) {
+    #slider {
+        width: 100%;
+        display: inline-block;
+    }
+}
+
+@media (min-width:1025px) {
+    #slider {
+        height: 400px;
+        width: 50%;
+    }
+
+    #slider h2:first-of-type {
+        font-size: 1em;
+    }
+}
+
+
+#slider div {
+    height: 100%;
+    width: 48%;
+}
+
+#slider .foto1 {
+    position: absolute;
+    background-image: url("../IMAGESNIEUW/sylvie.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 250px;
+    margin-left: 1em;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.5fr 1fr 1fr;
+}
+
+
+
+.foto1 h2 {
+    color: white;
+    background-color: lightpink;
+    height: 2em;
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+    grid-row-start: 8;
+
+}
+
+#slider p {
+    color: white;
+    margin: auto;
+    grid-row-start: 8;
+
+}
+
+
+
+#slider .foto2 {
+    position: absolute;
+    left: 15em;
+    height: 250px;
+    background-image: url(../IMAGESNIEUW/fingernecklace.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.5fr 1fr 1fr;
+}
+
+
+#Onsverhaal {
+    margin-top: 2em;
+    position: relative;
+    height: 700px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4.5fr 3fr 1fr;
+
+
+}
+
+.FOTOonsverhaal {
+    position: absolute;
+    background-image: url(../IMAGESNIEUW/ourstory.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.rechts1 p {
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.rechts1 h3 {
+    font-size: 2rem;
+}
+
+.rechts1 {
+    margin: 32em 2em 2em 2em;
+
+}
+
+
+@media (min-width:1025px) {
+
+    .FOTOonsverhaal {
+        display: block;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-top: 5em;
+        height: 700px;
+
+    }
+
+}
+
+@media (min-width:1025px) {
+    .rechts1 {
+        position: relative;
+        max-width: 380px;
+        margin-left: 50em;
+        margin-top: 5em;
+        text-align: left;
+        grid-row-start: 1;
+    }
+}
+
+@media (max-width:400px) {
+    .rechts1 {
+        position: relative;
+        grid-row-start: 3;
+    }
+}
+
+@media(max-width: 400px) {
+    .FOTOonsverhaal {
+        width: 100%;
+    }
+}
+
+
+#giftshop {
+    position: relative;
+    margin-top: 15em;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 4.5fr 3fr 1fr;
+
+
+}
+
+.FOTOgiftshop {
+    position: absolute;
+    background-image: url(../IMAGESNIEUW/Giftshop.JPG);
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+}
+
+
+
+.rechts2 p {
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.rechts2 h3 {
+    font-size: 2rem;
+}
+
+.rechts2 {
+    margin:32em 2em 2em 2em;
+
+}
+
+
+@media (min-width:1025px) {
+
+    .FOTOgiftshop {
+        display: block;
+        position: absolute;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 48%;
+        margin-left: 5em;
+    }
+
+}
+
+@media (min-width:1025px) {
+    .rechts2 {
+        position: relative;
+        max-width: 380px;
+        margin-left: 50em;
+        margin-top: 2em;
+        text-align: left;
+        grid-row-start: 1;
+    }
+}
+
+@media (max-width:400px) {
+    .rechts2 {
+        position: relative;
+        grid-row-start: 3;
+    }
+}
+
+@media(max-width: 400px) {
+    .FOTOgiftshop {
+        width: 100%;
+    }
+}
+
+#persoonlijk {
+    margin-top: 25em;
+    padding: 2em 1em 2em 1em;
+    background-color: lightgray;
+    background-image: url(../IMAGESNIEUW/bloemen.jpg);
+    opacity: .5;
+}
+
+.Tekstpersoonlijk {
+    text-align: center;
+}
