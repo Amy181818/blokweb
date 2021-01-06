@@ -1,8 +1,284 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+}
+
+
 body {
     margin: 0;
     width: 100vw;
     font-family: sans-serif;
 }
+
+
+
+a {
+
+    text-decoration: none;
+    padding-right: .5em;
+    justify-content: space-between;
+
+
+}
+
+.container {
+    max-width: 98rem;
+    margin: 0 auto;
+    padding: 0 2.2rem;
+    background-color: white;
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1400;
+    width: 100%;
+    height: 4.4rem;
+    background-color: white;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin: 0 -1rem;
+    padding-top: 1rem;
+}
+
+
+.nav-list-mobile {
+    display: none;
+}
+
+
+.nan-link:hover {
+    opacity: .7;
+}
+
+.nav-link-logo img {
+    width: 11rem;
+    z-index: 1500;
+    padding-left: 20em;
+
+}
+
+.nav-link-zoeken img {
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 1500;
+
+}
+
+.nav-link-zoeken {
+    font-size: .8rem;
+}
+
+.nav-link-tas img {
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 1500;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-link-hartje img {
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 1500;
+    padding-left: 12em;
+}
+
+.nav-link-profiel img {
+    width: 1.5rem;
+    height: 1.5rem;
+    z-index: 1500;
+    padding-left: 1em;
+}
+
+.nav-extra {
+padding-left: 10em;
+    padding-top: 1.5em;
+    padding-bottom: 1em;
+}
+
+.nav-extra {
+
+
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+    header {
+        height: 4.8rem;
+    }
+
+    header .container {
+        padding: 0;
+    }
+
+    .nav-list {
+        margin-top: 0;
+        padding-top: 0;
+    }
+
+    .nav-list-mobile {
+        display: flex;
+
+    }
+
+    .nav-item {
+        width: 4.8rem;
+        display: flex;
+        justify-content: center;
+
+    }
+
+
+    .nav-item-hidden {
+        display: none;
+    }
+
+
+
+    .mobile-menu {
+        position: relative;
+        z-index: 1500;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .line {
+        position: absolute;
+        width: 1.7rem;
+        height: 0.06em;
+        top: 2em;
+        left: 2em;
+        background-color: black;
+        margin-top: 0.6em;
+    }
+
+    .line-top {
+        margin-top: 0.2rem;
+    }
+
+    .line-bottom {
+        margin-top: -4.rem;
+    }
+
+    .active .line-top {
+        margin-top: 0;
+        transform: rotate (45deg);
+        transition: transform .3192s .1s;
+    }
+
+    .active .line-bottom {
+        margin-top: 0;
+        transform: rotate (-45deg);
+        transition: transform .3192s .1s;
+    }
+
+    header.active {
+        height: 80%;
+        background-color: white;
+    }
+
+
+   .nav-link-tas {
+        width: 1.6rem;
+        height: 4.8rem;
+        transition: opacity 3s;
+    }
+
+
+    .nav-link {
+        font-size: 1.7rem;
+        padding: 0;
+        margin-top: 0.7em;
+
+    }
+
+    .nav-list-larger {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+        color: black;
+    }
+
+    .nav-extra {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        display: block;
+        padding: 10.5rem 5rem;
+        z-index: 1000;
+        box-sizing: border-box;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s;
+        color: black;
+    }
+
+    .active .nav-extra {
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-list-larger {
+
+        height: 100vh;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .active .nav-link-tas {
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .active .nav-link-logo img {
+        opacity: 0;
+    }
+
+
+    .nav-list-larger  {
+        width: 100%;
+        justify-content: flex-start;
+        border-bottom: 2px solid rgba(255, 255, 255, .1);
+        background-color: white;
+    }
+
+
+}
+
+@media screen and (min-width: 767px) {
+
+}
+
+
+
+
 
 .home img {
     position: relative;
@@ -12,36 +288,38 @@ body {
 
 @media (min-width:1025px) {
     .home img {
-height: 550px;
-background-position: center center;
+        height: 550px;
+        background-position: center center;
 
     }
 }
 
 @media (max-width:400px) {
     .home img {
-height: 70%;
+        height: 70%;
     }
 }
 
 #slider {
-    position: relative;
     height: 300px;
     width: 100%;
-    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 1em;
 }
 
 @media (max-width: 400px) {
     #slider {
         width: 100%;
-        display: inline-block;
+        overflow: hidden;
+        margin: auto;
+
     }
 }
 
 @media (min-width:1025px) {
     #slider {
-        height: 400px;
-        width: 50%;
+        width: 100%;
     }
 
     #slider h2:first-of-type {
@@ -52,16 +330,14 @@ height: 70%;
 
 #slider div {
     height: 100%;
-    width: 48%;
+    width: 80%;
 }
 
 #slider .foto1 {
-    position: absolute;
     background-image: url("../IMAGESNIEUW/sylvie.jpg");
     background-size: cover;
     background-position: center center;
     height: 250px;
-    margin-left: 1em;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 4.5fr 1fr 1fr;
@@ -90,8 +366,16 @@ height: 70%;
 
 
 #slider .foto2 {
-    position: absolute;
-    left: 15em;
+    height: 250px;
+    background-image: url(../IMAGESNIEUW/birthstonering.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.5fr 1fr 1fr;
+}
+
+#slider .foto3 {
     height: 250px;
     background-image: url(../IMAGESNIEUW/fingernecklace.jpg);
     background-size: cover;
@@ -101,6 +385,15 @@ height: 70%;
     grid-template-rows: 4.5fr 1fr 1fr;
 }
 
+#slider .foto4 {
+    height: 250px;
+    background-image: url(../IMAGESNIEUW/chantal_collectie_2.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4.5fr 1fr 1fr;
+}
 
 #Onsverhaal {
     margin-top: 2em;
@@ -114,7 +407,6 @@ height: 70%;
 }
 
 .FOTOonsverhaal {
-    position: absolute;
     background-image: url(../IMAGESNIEUW/ourstory.jpg);
     background-size: cover;
     width: 100%;
@@ -135,7 +427,7 @@ height: 70%;
 }
 
 .rechts1 {
-    margin: 32em 2em 2em 2em;
+    margin: 2em 2em 2em 2em;
 
 }
 
@@ -192,7 +484,6 @@ height: 70%;
 }
 
 .FOTOgiftshop {
-    position: absolute;
     background-image: url(../IMAGESNIEUW/Giftshop.JPG);
     background-size: cover;
     width: 100%;
@@ -213,7 +504,7 @@ height: 70%;
 }
 
 .rechts2 {
-    margin:32em 2em 2em 2em;
+    margin: 2em 2em 2em 2em;
 
 }
 
@@ -226,15 +517,21 @@ height: 70%;
         background-size: cover;
         background-repeat: no-repeat;
         background-size: contain;
-        width: 48%;
+        width: 55%;
         margin-left: 5em;
     }
 
 }
 
+@media(max-width: 400px) {
+    .FOTOgiftshop {
+        width: 100%;
+    }
+}
+
+
 @media (min-width:1025px) {
     .rechts2 {
-        position: relative;
         max-width: 380px;
         margin-left: 50em;
         margin-top: 2em;
@@ -245,25 +542,52 @@ height: 70%;
 
 @media (max-width:400px) {
     .rechts2 {
-        position: relative;
         grid-row-start: 3;
+        margin-bottom: 5em;
     }
 }
 
-@media(max-width: 400px) {
-    .FOTOgiftshop {
-        width: 100%;
-    }
-}
+
 
 #persoonlijk {
-    margin-top: 25em;
-    padding: 2em 1em 2em 1em;
+    margin-top: 17em;
+    padding: 3em 2em 3em 2em;
     background-color: lightgray;
     background-image: url(../IMAGESNIEUW/bloemen.jpg);
-    opacity: .5;
+    opacity: .8;
+
 }
 
 .Tekstpersoonlijk {
     text-align: center;
+    margin: 1em 5em 1em 5em;
+    font-weight: 300;
+    line-height: 1.8;
+    font-size: 1rem;
+}
+
+.Tekstpersoonlijk h3 {
+    font-family: fantasy;
+}
+
+.Tekstpersoonlijk button {
+    text-align: center;
+    background-color: palevioletred;
+    width: 10em;
+    height: 4em;
+    margin-top: 2em;
+
+}
+
+#single img {
+    width: 60%;
+}
+
+#wishlist .item {
+ display: flex;
+    text-decoration: none;
+}
+
+#wishlist h1 {
+
 }
