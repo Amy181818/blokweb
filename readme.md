@@ -32,7 +32,14 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 -same as voortgang 1-
 
+Dit ging goed:
+- Ik heb paar goede tips gekregen van mijn mede studenten waardoor ik responsive nu beter begrijp.
+- Slider maken met html/css.
 
+Dit was lastig:
+- Deze week heb ik veel moeite gehad met het responsive maken van mijn website.
+- Doordat ik veel vast liep deze week heb ik niet echt grote verschillen en goede resultaten behaalt. Daar baal ik zelf erg van.
+- Overal: Heb ik helaas een slechte week gehad, maar ik geef niet op!
 
 ## Voortgang 1 (week 3)
 
